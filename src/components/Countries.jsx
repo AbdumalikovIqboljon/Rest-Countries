@@ -20,10 +20,12 @@ export default function Countries() {
     getAllCountries()
   }, [])
   return (
-    <ul className="grid grid-cols-4 grid-rows-1 gap-[75px] list-none p-0 m-0">
-      {countries?.map(country => {
-        return <SingleCountry country={country} key={country.index} />
-      })}
-    </ul>
+    <div className="container mx-auto">
+      <ul className="grid grid-cols-4 grid-rows-1 gap-[75px] list-none p-0 m-0">
+        {countries?.map(country => {
+          return <SingleCountry country={country} key={country.index} />
+        })}
+      </ul>
+    </div>
   );
 }
