@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("./assets/fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+        url("./assets/fonts/NunitoSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("./assets/fonts/NunitoSans-Light.woff2") format("woff2"),
+        url("./assets/fonts/NunitoSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("./assets/fonts/NunitoSans-Regular.woff2") format("woff2"),
+        url("./assets/fonts/NunitoSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("./assets/fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+        url("./assets/fonts/NunitoSans-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Nunito Sans", "Arial", sans-serif;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

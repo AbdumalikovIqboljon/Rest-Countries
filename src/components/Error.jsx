@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Country() {
+export default function Error() {
   return (
     <div>
-      Single Country
+      <h1>Error</h1>
     </div>
   )
 }
