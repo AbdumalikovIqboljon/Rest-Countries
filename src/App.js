@@ -6,8 +6,9 @@ import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
+
   return (
-    <>
+    <main className="bg-gray-100 dark:bg-gray-900">
     
       <Header />
       <Routes>
@@ -16,6 +17,6 @@ export default function App() {
         <Route path="/:name" element={<Country />}></Route>
         <Route path="*" element={<Error/>} />
       </Routes>
-    </>
+    </main>
   )
 }
