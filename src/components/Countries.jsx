@@ -14,7 +14,7 @@ export default function Countries() {
     const response = await fetch(apiURL)
     const data = await response.json()
     setCountries(data)
-    console.log(data) 
+    // console.log(data)
   }
   useEffect(() => {
     getAllCountries()
@@ -23,7 +23,7 @@ export default function Countries() {
     <div className="container mx-auto dark:bg-red-600 dark:text-white">
       <ul className="grid grid-cols-4 grid-rows-1 gap-[75px] list-none p-0 m-0">
         {countries?.map(country => {
-          return <SingleCountry country={country} key={country.index} />
+          return <SingleCountry country={ country } key={ country.name.common } />
         })}
       </ul>
     </div>

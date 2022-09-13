@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @font-face {
     font-family: "Nunito Sans";
     src: url("./assets/fonts/NunitoSans-SemiBold.woff2") format("woff2"),
@@ -32,7 +37,5 @@
 }
 body {
     font-family: "Nunito Sans", "Arial", sans-serif;
+    @layer bg-gray-100 dark:bg-gray-900;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
